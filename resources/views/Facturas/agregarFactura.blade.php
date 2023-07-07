@@ -46,7 +46,7 @@
                                 @if (count($emisoras) > 0)
                                     <option value="">Seleccione una empresa emisora</option>
                                     @foreach ($emisoras as $emisora)
-                                        <option value="{{ $emisora->id }}">{{ $emisora->nombre }}</option>
+                                        <option value="{{ $emisora->id }}">{{ $emisora->razon_social }}</option>
                                     @endforeach
                                 @else
                                     <option value="">No hay empresas emisoras</option>

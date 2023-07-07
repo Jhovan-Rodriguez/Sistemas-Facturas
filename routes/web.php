@@ -81,3 +81,6 @@ Route::post('/pdf',[ArchivosController::class,'storePDF'])->name('archivos.pdf')
 Route::post('/xml',[ArchivosController::class,'storeXML'])->name('archivos.xml');
 //Ruta para descargar los archivos de la tabla
 Route::get('/download/{file}',[ArchivosController::class,'download'])->name('archivos.download');
+
+//Ruta para buscar factura
+Route::post('/buscarFactura',[GeneralController::class,'search'])->name('factura.buscar');

@@ -1,4 +1,7 @@
 import Dropzone from 'dropzone';
+//Se inicializan los select de busqueda
+import { Select, initTE } from "tw-elements";
+initTE({ Select });
 
 Dropzone.autoDiscover = false;
 // Configuración del dropzone
@@ -71,3 +74,5 @@ dropzoneXML.on('removedfile', function () {
     // Para resetear el valor cuando se elimine la imagen
     document.querySelector('[name="xml"]').value = '';
 });
+
+
